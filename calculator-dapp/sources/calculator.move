@@ -1,6 +1,6 @@
 module sidkris::calculator {
 
-    use std::signer;
+    // use std::signer;
 
     struct Calculator has key {
         result : u64,
