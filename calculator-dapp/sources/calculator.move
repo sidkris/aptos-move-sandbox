@@ -7,9 +7,16 @@ module sidkris::calculator {
         result : u64,
     }
 
-    public entry fun create_calculator(account : &signer) {
+    public entry fun create_calculator(account : &signer) acquires Calculator {
+
+        if(exists<Calculator>(signer::address_of(account))){
+            let calculator = borrow_global_mut<Calculator>(signer::address_of(account));
+            calculator.result = 0;
+        }
+        else{
         let calculator = Calculator{result : 0};
         move_to(account, calculator);
+        }
     }
 
 
