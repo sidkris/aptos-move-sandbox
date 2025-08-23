@@ -1,7 +1,7 @@
 [package]
 name = "calculator_dapp"
 version = "1.0.0"
-authors = []
+authors = ["Siddharth Krishnan"]
 
 [addresses]
 sidkris = "004e66c6a25f2a34cc18dd02f2bc410ac6a2d884b6149724c568f8ddd5484f29"
