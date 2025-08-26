@@ -2,3 +2,5 @@
 build/
 .env
 config.yaml
+voting-dapp\.aptos
+.aptos
